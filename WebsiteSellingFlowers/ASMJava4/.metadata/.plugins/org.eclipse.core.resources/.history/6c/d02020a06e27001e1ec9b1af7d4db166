@@ -1,0 +1,29 @@
+package com.poly.dao;
+
+import java.util.List;
+import javax.persistence.EntityManager;
+
+import com.poly.until.JpaUtil;
+
+
+public class AbstractDao<T>
+{
+	public static final EntityManager entityManager = JpaUtil.getEntityManager();
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	protected void finalize() throws Throwable {
+		entityManager.close();
+		super.finalize();
+	}
+	
+	public T findById(Class<T> clazz, Integer id)
+	{
+		return entityManager.find(clazz, id);
+	}
+	
+	public List<T> findAll(Class<T> clazz,boolean existIsActive)
+	{
+		//SELCET o FROM entity WHERE isActive = 1;
+	}
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\FPT POLYTECNICH\FPOLY KI 5\JAVA4\ASMJava4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2806715091.index
+\AsmJava4\src\main\java
+C:\FPT POLYTECNICH\FPOLY KI 5\JAVA4\ASMJava4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3286339812.index
+\lab5\src\main\java
+C:\FPT POLYTECNICH\FPOLY KI 5\JAVA4\ASMJava4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\260797695.index
+\AsmJava4\src\main\java
+C:\FPT POLYTECNICH\FPOLY KI 5\JAVA4\ASMJava4\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2984712573.index
+\AsmJava4\src\main\java

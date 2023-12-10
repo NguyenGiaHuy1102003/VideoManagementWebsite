@@ -1,0 +1,28 @@
+package com.poly.dao;
+
+import javax.persistence.EntityManager;
+
+import com.poly.until.JpaUtil;
+
+
+public class AbstracDao<T>
+{
+	public static final EntityManager entityManager = JpaUtil.getEntityManager();
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	protected void finalize() throws Throwable {
+		entityManager.close();
+		super.finalize();
+	}
+	
+	public T findById(Class<T> clazz, Integer id)
+	{
+		return entityManager.find(clazz, id);
+	}
+	
+	public java.util.List<T> findAlll(Class<T> clazz)
+	{
+		
+	}
+}

@@ -1,0 +1,9 @@
+127.0.0.1 - - [26/Jul/2023:13:19:52 +0700] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/Jul/2023:13:20:28 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Jul/2023:13:20:29 +0700] "GET /lab5/WEB-INF/classes/poly/com/JpaProgram.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [26/Jul/2023:13:20:30 +0700] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [26/Jul/2023:13:24:56 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Jul/2023:13:25:00 +0700] "GET /lab5/user/index HTTP/1.1" 500 5890
+0:0:0:0:0:0:0:1 - - [26/Jul/2023:13:26:39 +0700] "GET /lab5/WEB-INF/classes/poly/com/JpaProgram.java HTTP/1.1" 404 682
+127.0.0.1 - - [26/Jul/2023:13:40:00 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Jul/2023:13:40:00 +0700] "GET /lab5/WEB-INF/classes/poly/dao/UserDao.java HTTP/1.1" 404 682

@@ -1,0 +1,39 @@
+package com.poly.dao;
+
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
+
+import com.poly.until.JpaUtil;
+
+
+public class AbstractDao<T>
+{
+	public static final EntityManager entityManager = JpaUtil.getEntityManager();
+	
+	@SuppressWarnings("deprecation")
+	@Override
+	protected void finalize() throws Throwable {
+		entityManager.close();
+		super.finalize();
+	}
+	
+	public T findById(Class<T> clazz, Integer id)
+	{
+		return entityManager.find(clazz, id);
+	}
+	
+	public List<T> findAll(Class<T> clazz,boolean existIsActive)
+	{
+		String entityName = clazz.getSimpleName();
+		StringBuilder sql = new StringBuilder();
+		sql.append("SELCET o FROM ").append(entityName).append(" o");
+		//SELCET o FROM History o WHERE isActive = 1;
+		if (existIsActive ==true)
+		{
+			sql.append(" WHERE is Active = 1");
+		}
+		TypedQuery<T> query = entityManager.createQuery(sql.toString(), clazz);
+		return query.getResultList();
+	}
+}

@@ -1,0 +1,9 @@
+package com.poly.dao;
+
+public class Snippet {
+	@Override
+		public List<User> findAll(int pageNumber, int pageSize) {
+			return super.findAll(User.class, true, pageNumber, pageSize);
+		}
+}
+

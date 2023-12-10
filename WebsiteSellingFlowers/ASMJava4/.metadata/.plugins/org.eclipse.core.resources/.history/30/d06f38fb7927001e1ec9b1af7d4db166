@@ -1,0 +1,5 @@
+package com.poly.impl;
+
+public class HistoryDaoImpl {
+
+}

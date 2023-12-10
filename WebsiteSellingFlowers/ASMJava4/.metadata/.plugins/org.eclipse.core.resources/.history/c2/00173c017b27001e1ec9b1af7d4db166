@@ -1,0 +1,12 @@
+package com.poly.dao.impl;
+
+public class Snippet {
+	Video finById(Integer id);
+	Video findByHref(String href);
+	List<Video> findAll();
+	List<Video> finAll(int pageNumber, int pageSize);
+	Video create(Video entity);
+	Video update(Video entity);
+	Video delete(Video entity);
+}
+

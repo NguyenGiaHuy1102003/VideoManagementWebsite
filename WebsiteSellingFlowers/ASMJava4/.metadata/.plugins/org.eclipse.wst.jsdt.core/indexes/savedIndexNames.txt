@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+C:\FPT POLYTECNICH\FPOLY KI 5\JAVA4\ASMJava4\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1648744626.index

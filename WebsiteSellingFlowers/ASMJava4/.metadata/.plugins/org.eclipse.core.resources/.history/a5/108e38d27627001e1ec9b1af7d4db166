@@ -1,0 +1,5 @@
+package com.poly.dao;
+
+public interface VideoDao {
+
+}
